@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nolan Wolfe — Director &amp; Photographer</title>
+  <meta name="description" content="Nolan Wolfe is a director and photographer — and builder of thoughtful software. Open for projects." />
+
+  <meta property="og:title" content="Nolan Wolfe — Director & Photographer" />
+  <meta property="og:description" content="Director & photographer. Builder of thoughtful software. Open for projects." />
+  <meta property="og:url" content="https://nolan-wolfe.com" />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◆</text></svg>" />
+</head>
+<body>
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"></div>
+
+  <!-- vertical scroll cue, espegren-style -->
+  <div class="scroll-cue" id="scroll-cue" aria-hidden="true">
+    <span>k</span><span>e</span><span>e</span><span>p</span>
+    <span class="scroll-cue__gap"></span>
+    <span>s</span><span>c</span><span>r</span><span>o</span><span>l</span><span>l</span><span>i</span><span>n</span><span>g</span>
+  </div>
+
+  <main id="top">
+
+    <!-- ============ THE CARD ============ -->
+    <section class="card">
+
+      <!-- corner metadata -->
+      <div class="card__corner card__corner--tl">
+        <span class="corner-label">Name</span>
+        <span>Nolan Wolfe</span>
+      </div>
+      <div class="card__corner card__corner--tr">
+        <span class="corner-label">Local time</span>
+        <span id="local-time">--:--</span>
+      </div>
+      <div class="card__corner card__corner--bl">
+        <span class="corner-label">Based in</span>
+        <span>Los Angeles</span> <!-- TODO: confirm city -->
+      </div>
+      <div class="card__corner card__corner--br">
+        <span class="corner-label">Made with</span>
+        <span>Love</span>
+      </div>
+
+      <!-- center of the card -->
+      <div class="card__center">
+        <p class="card__status">
+          <span class="dot" aria-hidden="true"></span> Open for projects
+        </p>
+
+        <h1 class="card__name">
+          <span class="line"><span class="line__inner">Nolan</span></span>
+          <span class="line"><span class="line__inner">Wolfe<em class="accent">.</em></span></span>
+        </h1>
+
+        <p class="card__role">
+          <span class="line"><span class="line__inner">Director &amp; Photographer</span></span>
+        </p>
+
+        <p class="card__sub">
+          …and builder of <em>thoughtful</em> software.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section class="work" id="work">
+      <h2 class="section-label" data-reveal><span class="accent">01</span> — Work</h2>
+
+      <ul class="work__list">
+        <li class="work__item" data-reveal>
+          <a class="work__link" href="https://nolanfilm.com" data-cursor target="_blank" rel="noopener">
+            <span class="work__index">01</span>
+            <span class="work__body">
+              <span class="work__title">Nolanfilm</span>
+              <span class="work__desc">Photography &amp; directing. The pictures speak for themselves — go look.</span>
+            </span>
+            <span class="work__tag">Film · Photo</span>
+            <span class="work__arrow" aria-hidden="true">↗</span>
+          </a>
+        </li>
+
+        <li class="work__item" data-reveal>
+          <a class="work__link" href="#" data-cursor> <!-- TODO: Verg App Store / site link -->
+            <span class="work__index">02</span>
+            <span class="work__body">
+              <span class="work__title">Verg</span>
+              <span class="work__desc">A journal that stays out of your way. iOS, built with obsessive attention to feel.</span>
+            </span>
+            <span class="work__tag">iOS · 2026</span>
+            <span class="work__arrow" aria-hidden="true">↗</span>
+          </a>
+        </li>
+
+        <li class="work__item" data-reveal>
+          <a class="work__link" href="#" data-cursor> <!-- TODO: AI project link + real one-liner -->
+            <span class="work__index">03</span>
+            <span class="work__body">
+              <span class="work__title">AI Work</span>
+              <span class="work__desc">Placeholder — the AI project, described in one confident sentence.</span>
+            </span>
+            <span class="work__tag">AI · TBD</span>
+            <span class="work__arrow" aria-hidden="true">↗</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============ WRITING ============ -->
+    <section class="writing" id="writing">
+      <h2 class="section-label" data-reveal><span class="accent">02</span> — Writing</h2>
+
+      <p class="writing__intro" data-reveal>
+        Notes on directing, photography, and building things —
+        <em>occasionally</em>, and only when there’s something worth saying.
+      </p>
+
+      <ul class="writing__list">
+        <li class="writing__item writing__item--soon" data-reveal>
+          <span class="writing__title">First piece in the works</span>
+          <span class="writing__date">Soon</span>
+        </li>
+        <!-- Add articles like this (copy writing/template.html for the page):
+        <li class="writing__item" data-reveal>
+          <a class="writing__link" href="writing/my-article.html" data-cursor>
+            <span class="writing__title">Article title</span>
+            <span class="writing__date">Aug 2026</span>
+          </a>
+        </li>
+        -->
+      </ul>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <footer class="contact" id="contact">
+      <h2 class="section-label" data-reveal><span class="accent">03</span> — Contact</h2>
+
+      <a class="contact__email" href="mailto:nwolfe707@gmail.com" data-reveal data-cursor>
+        Let’s talk<em class="accent">.</em>
+      </a>
+
+      <ul class="contact__links" data-reveal>
+        <li><a href="https://nolanfilm.com" data-cursor rel="me noopener" target="_blank">Nolanfilm</a></li>
+        <li><a href="https://www.instagram.com/" data-cursor rel="me noopener" target="_blank">Instagram</a></li> <!-- TODO: profile URL -->
+        <li><a href="https://x.com/" data-cursor rel="me noopener" target="_blank">X</a></li>                     <!-- TODO: profile URL -->
+        <li><a href="https://github.com/" data-cursor rel="me noopener" target="_blank">GitHub</a></li>           <!-- TODO: profile URL -->
+        <li><a href="mailto:nwolfe707@gmail.com" data-cursor>Email</a></li>
+      </ul>
+
+      <div class="contact__foot" data-reveal>
+        <span>© <span id="year">2026</span> Nolan Wolfe</span>
+        <span>nolan-wolfe.com</span>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
